@@ -1,0 +1,27 @@
+[project]
+name = "fuaqkai"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "mazzie", email = "mazziechai@protonmail.com"},
+]
+dependencies = [
+    "pillow>=10.4.0",
+    "hikari[speedups]>=2.0.0.dev126",
+    "hikari-arc>=1.3.4",
+    "hikari-miru>=4.1.1",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "AGPL-3.0-only"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=3.7.1",
+    "black>=24.4.2",
+    "ruff>=0.5.1",
+]
